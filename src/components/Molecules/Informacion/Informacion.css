@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.info-container {
+    width: 350px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.5s ease, padding 0.5s ease; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.info-container.expanded {
+    padding-bottom: 15px; 
+}
+
+.info-header {
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-title {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+.info-content {
+    padding: 20px;
+}
+
+.info-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    animation: carousel 25s infinite;
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 0 0 100%;
+    border-radius: 15px;
+}
+
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+}
+
+.info-description {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.info-points {
+    margin-top: 20px;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.point-icon {
+    margin-right: 10px;
+    color: #28a745;
+    font-size: 18px; /* Aumenta el tamaño del icono */
+}
+
+.point span {
+    font-size: 18px; /* Aumenta el tamaño del texto */
+}
+
+.info-container {
+    width: 350px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Agrega transición suave para el cambio de altura */
+    font-family: 'Roboto', sans-serif; /* Usa una fuente personalizada */
+}
+
+.info-container.expanded {
+    padding-bottom: 15px; /* Agrega espacio al final cuando esté expandido */
+}
+
+.info-header {
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-title {
+    margin: 0;
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+.info-content {
+    padding: 20px;
+}
+
+.info-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    animation: carousel 25s infinite;
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+}
+
+.info-description {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+}
+
+.info-points {
+    margin-top: 20px;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.point-icon {
+    margin-right: 10px;
+    color: #28a745;
+    font-size: 18px; /* Aumenta el tamaño del icono */
+}
+
+.point span {
+    font-size: 18px; /* Aumenta el tamaño del texto */
+}

@@ -1,0 +1,112 @@
+/* Contenedor principal para centrar el contenido */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Ajusta para tomar en cuenta la altura de BarBuscador y Footer */
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Caja que contiene tanto la imagen como el formulario */
+.login-box {
+    display: flex;
+    width: 80%; /* Aumenta el ancho para que el formulario sea más grande */
+    max-width: 1000px; /* Ancho máximo para la caja */
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* Sección de la imagen ocupando la mitad de la caja */
+.login-image-half {
+    flex: 1;
+    max-width: 50%; /* La imagen ocupa la mitad de la caja */
+    overflow: hidden;
+}
+
+.login-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen cubre el área y mantiene proporciones */
+}
+
+/* Sección del formulario ocupando la otra mitad de la caja */
+.login-form-half {
+    flex: 1;
+    padding: 60px 40px; /* Más relleno para un aspecto más espacioso */
+    max-width: 50%; /* El formulario ocupa la otra mitad de la caja */
+}
+
+.login-heading {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 40px; /* Más espacio debajo del título */
+    font-size: 30px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-input-group {
+    margin-bottom: 25px;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 16px; /* Aumenta el tamaño de la fuente para etiquetas */
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px; /* Más relleno para inputs */
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+.login-submit-btn {
+    width: 100%;
+    padding: 15px; /* Aumenta el relleno del botón */
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px; /* Aumenta el tamaño de la fuente del botón */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio encima del botón */
+}
+
+.login-submit-btn:hover {
+    background-color: #0088cc;
+}
+
+.login-register-prompt {
+    text-align: center;
+    margin-top: 30px; /* Más espacio encima del texto */
+    color: #666666;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+}
+
+.login-register-link {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.login-register-link:hover {
+    text-decoration: underline;
+}

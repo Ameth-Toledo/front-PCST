@@ -1,0 +1,7 @@
+.catalogo-mujeres-container {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta las tarjetas a nuevas filas si no hay espacio suficiente */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor de las tarjetas */
+}

@@ -1,0 +1,99 @@
+/* Aplica flexbox al contenedor principal para asegurar que el footer esté al fondo */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.main-content-add {
+    flex: 1; /* Ocupa el espacio restante, empujando el footer hacia abajo */
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.informacion {
+    flex: 1;
+    min-width: 300px;
+    /* Asegura que el componente se expanda verticalmente según el contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.product-form {
+    flex: 2;
+    max-width: 900px;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: none;
+    margin-left: 150px;
+}
+
+.product-form-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 3%;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-form-field {
+    margin-bottom: 20px;
+    grid-column: span 1;
+}
+
+.product-form-input,
+.product-form-textarea,
+.product-form-file-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.product-form-textarea {
+    resize: vertical;
+}
+
+.product-form-button {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.product-form-button:hover {
+    background-color: #0056b3;
+}
+
+.form-icon {
+    margin-right: 8px;
+    color: #00aaff;
+}
+
+.footer-add {
+    /* Asegura que el footer se mantenga al fondo de la página */
+    margin-top: 20px; /* Ajusta según el diseño */
+}

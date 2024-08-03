@@ -1,0 +1,15 @@
+.cards-container {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-around; /* Evenly space cards */
+    align-items: center; /* Center align cards vertically */
+    padding: 20px; /* Add padding around the container */
+    gap: 20px; /* Add spacing between cards */
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center-align stacked cards */
+    }
+}

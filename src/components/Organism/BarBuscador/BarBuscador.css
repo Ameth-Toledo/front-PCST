@@ -1,0 +1,86 @@
+.header-pc-store {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(168, 50, 50);
+    padding: 20px 20px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.header-left-pc-store,
+.header-center-pc-store,
+.header-right-pc-store {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: space-between; 
+}
+
+.header-left-pc-store {
+    justify-content: flex-start; 
+}
+
+.header-center-pc-store {
+    justify-content: center; 
+    gap: 20px;
+}
+
+.header-right-pc-store {
+    justify-content: flex-end; 
+    gap: 20px; 
+}
+
+.store-name-link-pc-store {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensures the color matches the header */
+}
+
+.store-name-pc-store {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.search-input-pc-store {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    flex: 1; 
+    max-width: 400px; 
+}
+
+.nav-link-pc-store {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-link-pc-store:hover {
+    color: #ccc;
+}
+
+.nav-icon-pc-store {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.login-link-pc-store {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cart-link-pc-store {
+    color: white;
+    font-size: 24px;
+}
+
+.cart-link-pc-store .fa-shopping-cart {
+    font-size: 24px;
+}

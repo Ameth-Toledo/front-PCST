@@ -1,0 +1,64 @@
+.card-admin {
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width */
+    margin: 20px auto; /* Center the card horizontally */
+    padding: 20px; /* Add padding for inner spacing */
+    text-align: center; /* Center text within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    overflow: hidden; /* Ensure content stays within borders */
+}
+
+.card-admin:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.titulo-admin {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.img-admin {
+    width: 80px; /* Icon size */
+    height: 80px; /* Icon size */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Cover image to fill circular space */
+    margin: 10px 0; /* Space above and below the icon */
+    border: 2px solid #00aaff; /* Optional border for aesthetic */
+    background-color: #e0f7ff; /* Background color for transparency effect */
+    padding: 5px; /* Padding for inner spacing */
+    display: inline-block; /* Ensures block-level styling */
+}
+
+.parrafo-admin {
+    font-size: 0.9em; /* Standard font size */
+    color: #666; /* Grey text color */
+    padding: 10px; /* Padding around the text */
+    line-height: 1.6; /* Line spacing for readability */
+}
+
+.button-admin {
+    background-color: #00aaff; /* Celeste color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    margin-top: 15px; /* Space above the button */
+}
+
+.button-admin:hover {
+    background-color: #0088cc; /* Darker celeste on hover */
+}
+
+@media (min-width: 768px) {
+    .card-admin {
+        width: 350px; /* Larger width for bigger screens */
+    }
+}
