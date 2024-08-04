@@ -13,6 +13,9 @@ import Playeras from './components/Page/Catalogos/Playeras/Playeras.jsx'
 import Shorts from './components/Page/Catalogos/Shorts/Shorts.jsx'
 import Pantalones from './components/Page/Catalogos/Pantalones/Pantalones.jsx'
 import HomeAdministrador from './components/Page/Administrador/Home/HomeAdministrador.jsx'
+import VerProductos from './components/Page/Administrador/VerProductos/VerProductos.jsx'
+import Ventas from './components/Page/Administrador/Ventas/Ventas.jsx'
+import Delivery from './components/Page/Delivery/Delivery.jsx'
 
 const router=createBrowserRouter ([
     {
@@ -58,6 +61,18 @@ const router=createBrowserRouter ([
     {
       path: '/home-administrador',
       element: <HomeAdministrador/>
+    },
+    {
+      path: '/ver-productos',
+      element: <VerProductos/>
+    },
+    {
+      path: '/ventas',
+      element: <Ventas/>
+    },
+    {
+      path: '/delivery',
+      element: <Delivery/>
     }
 ])
 

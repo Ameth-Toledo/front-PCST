@@ -1,0 +1,27 @@
+.ventas-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.ventas-report {
+    padding: 16px;
+}
+
+.ventas-grafica {
+    margin-bottom: 32px;
+}
+
+.productos-vendidos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.productos-vendidos li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.Footer {
+    margin-top: auto;
+}

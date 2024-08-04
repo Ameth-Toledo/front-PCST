@@ -1,0 +1,22 @@
+.ver-productos-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card-productos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+    padding: 16px;
+    gap: 16px; /* Espacio entre tarjetas */
+}
+
+.card-producto {
+    flex: 1 1 300px; /* Tarjetas flexibles con un tamaño mínimo de 300px */
+    max-width: 300px; /* Ancho máximo para cada tarjeta */
+}
+
+/* Asegúrate de que el Footer se mantenga al final de la página */
+.Footer {
+    margin-top: auto;
+}

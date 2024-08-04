@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faFemale, faMale } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import './BarBuscador.css';
 
 function BarBuscador() {
+    const [cartItemCount, setCartItemCount] = useState(0); 
+
     return (
         <header className="header-pc-store">
             <div className="header-left-pc-store">
@@ -25,8 +27,9 @@ function BarBuscador() {
             </nav>
             <div className="header-right-pc-store">
                 <a href="/login" className="login-link-pc-store">Iniciar sesión</a>
-                <a href="/carrito-compras" className="cart-link-pc-store">
+                <a href="/carrito-compras" className="cart-link-pc-store" title={cartItemCount === 0 ? "Carrito vacío" : ""}>
                     <FontAwesomeIcon icon={faShoppingCart} />
+                    {cartItemCount > 0 && <span className="cart-item-count">{cartItemCount}</span>}
                 </a>
             </div>
         </header>
