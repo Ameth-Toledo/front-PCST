@@ -16,6 +16,7 @@ import HomeAdministrador from './components/Page/Administrador/Home/HomeAdminist
 import VerProductos from './components/Page/Administrador/VerProductos/VerProductos.jsx'
 import Ventas from './components/Page/Administrador/Ventas/Ventas.jsx'
 import Delivery from './components/Page/Delivery/Delivery.jsx'
+import Register from './components/Page/Register/Register.jsx'
 
 const router=createBrowserRouter ([
     {
@@ -73,6 +74,10 @@ const router=createBrowserRouter ([
     {
       path: '/delivery',
       element: <Delivery/>
+    },
+    {
+      path: '/register',
+      element: <Register/>
     }
 ])
 
